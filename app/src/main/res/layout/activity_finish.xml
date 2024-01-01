@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinishActivity">
+
+    <TextView
+        android:id="@+id/txtEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End"
+        android:textColor="@color/colorAccent"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp" />
+
+    <ImageView
+        android:id="@+id/igmImage"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_jumping_jacks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnd"
+        />
+
+    <TextView
+        android:id="@+id/txtCongra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congradulations!"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/igmImage"
+        />
+
+    <TextView
+        android:id="@+id/txtCompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="you have done the workout!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCongra"
+        android:textSize="22sp"
+        />
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FINISH"
+        app:layout_constraintTop_toBottomOf="@id/txtCompleted"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
